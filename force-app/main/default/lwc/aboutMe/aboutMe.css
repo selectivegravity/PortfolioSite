@@ -1,0 +1,56 @@
+.background {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    background-color: rgba(243, 247, 236, 0.8); /* F3F7EC with transparency */
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 80%;
+    transition: background-color 0.3s ease;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease;
+}
+
+.image-container {
+    margin-bottom: 20px;
+}
+
+.background-image {
+    width: 300px; /* Adjust image size as needed */
+    border-radius: 50%;
+    transition: width 0.3s ease;
+}
+
+.text-container {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .overlay {
+        padding: 15px;
+    }
+
+    .background-image {
+        width: 200px; /* Adjust image size for smaller screens */
+    }
+
+    .text-container {
+        margin-top: 20px;
+    }
+}

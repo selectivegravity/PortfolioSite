@@ -58,6 +58,27 @@
     text-align: center;
 }
 
+
+.contact-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-button button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #006989;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button button:hover {
+    background-color: #005C78;
+}
+
 .profile-image {
     width: 250px;
     height: 250px;
