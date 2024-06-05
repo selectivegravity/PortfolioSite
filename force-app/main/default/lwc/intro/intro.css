@@ -1,0 +1,120 @@
+.background {
+    background: url('force-app\main\default\staticresources\Images\brown_woman.png') repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    background-color: rgba(243, 247, 236, 0.8); /* F3F7EC with transparency */
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 80%;
+}
+
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.quote-icon {
+    font-size: 3em;
+    color: #E88D67; /* Icon color E88D67 */
+    margin-top: 0px;
+    font-size: 1em;
+}
+
+.introduction {
+    color: #005C78; /* Text color 005C78 */
+    max-width: 60%;
+    margin: 20px auto;
+    text-align: justify;
+    line-height: 1.2rem;
+}
+
+.introduction p {
+    font-size: 1em;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+}
+
+.image-container {
+    padding: 5%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image-container p {
+    text-align: center;
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #006989; /* Border color 006989 */
+}
+
+@media (max-width: 768px) {
+    .overlay {
+        padding: 15px;
+    }
+
+    .profile-image {
+        width: 200px;
+        height: 200px;
+        margin: 5% auto;
+    }
+
+    .introduction {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .quote-icon {
+        font-size: 2em;
+    }
+
+    .introduction p {
+        font-size: 1em;
+    }
+
+    .image-container {
+        margin-top: 0; /* Remove the top margin */
+    }
+
+    /* .intro-section {
+        flex-direction: column-reverse;
+    } */
+}
+
+@media (min-width: 769px) {
+    .intro-section {
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .introduction {
+        /* max-width: 50%; 
+        margin-right: 5%; 
+        margin-bottom: 0; */
+        padding: 5%;
+        text-align: center;
+        margin: auto auto;
+    }
+
+    .image-container {
+        margin-bottom: 5px;
+    }
+}
