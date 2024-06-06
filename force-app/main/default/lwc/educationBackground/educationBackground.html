@@ -1,0 +1,21 @@
+<template>
+    <div class="background" style={backgroundStyle}>
+        <div class="overlay">
+            <div class="content">
+                <div class="text-container">
+                    <h1 class="title"><strong>Education Background</strong></h1>
+                    <div class="education-grid">
+                        <template for:each={educationList} for:item="edu">
+                            <div key={edu.id} class="education-tile">
+                                <h2>{edu.degree}</h2>
+                                <p><strong>{edu.institution}</strong></p>
+                                <p><em>{edu.year}</em></p>
+                                <p> <strong> Score: </strong> {edu.score} {edu.unit}</p>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
