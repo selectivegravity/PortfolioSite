@@ -1,0 +1,90 @@
+.background {
+    /* background: url('path/to/your-textured-background.jpg') repeat; */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.skills-container {
+    background-color: rgba(243, 247, 236, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 5px; /* Reduce margin */
+    flex: 1 1 calc(50% - 10px); /* Two containers per row */
+    max-width: 300px; /* Reduce max-width */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-name {
+    flex: 1;
+    font-size: 0.8em;
+    color: #005C78;
+}
+
+.skill {
+    margin-bottom: 5px; /* Reduce margin */
+    display: flex;
+    flex-direction: column;
+}
+
+.progress-bar-container {
+    min-height: 10px;
+    height: 10px; /* Reduce height */
+    background-color: #f0f0f0;
+    border-radius: 5px; /* Adjust border-radius */
+    overflow: hidden;
+    margin: 5px 0; /* Reduce margin */
+}
+
+.progress-bar {
+    height: 100%;
+    border-radius: 5px; /* Adjust border-radius */
+    transition: width 0.5s;
+}
+
+.skill-level {
+    align-self: flex-end; /* Align percentage to the right */
+    font-size: 0.8em; /* Reduce font size */
+    color: #006989;
+    margin-top: 2px; /* Reduce margin */
+}
+
+@media (max-width: 768px) {
+    .skills-container {
+        flex: 1 1 100%; /* Full width for smaller screens */
+    }
+
+    .skill {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .skill-name, .skill-level {
+        margin-bottom: 5px; /* Reduce margin */
+    }
+
+    .progress-bar-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .skills-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-start; /* Align items at the start of the flex container */
+        width: 100%;
+    }    
+}

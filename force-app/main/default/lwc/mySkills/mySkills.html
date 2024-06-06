@@ -1,0 +1,19 @@
+<template>
+    <div class="background" style={backgroundStyle}>
+        <div class="skills-wrapper">
+            <template for:each={skillGroups} for:item="group" for:index="groupIndex">
+                <div key={group.id} class="skills-container">
+                    <template for:each={group} for:item="skill">
+                        <div key={skill.id} class="skill">
+                            <span class="skill-name">{skill.name}</span>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" style={skill.style}></div>
+                            </div>
+                            <span class="skill-level">{skill.level}%</span>
+                        </div>
+                    </template>
+                </div>
+            </template>
+        </div>
+    </div>
+</template>
